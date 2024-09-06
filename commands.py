@@ -14,11 +14,21 @@ commands_to_search_in_wikipedia = ["buscar en wikipedia",
                                  "busca en wikipedia"]
 
 commads_to_ask_day = ["día es hoy",
-                      "a que día estamos",
+                      "a qué día estamos",
                       "dime la fecha actual"]
 
 commads_to_ask_hour = ["qué hora es",
                        "a qué hora estamos",
                        "dime la hora actual"]
 
-commands_to_close = ["chao", "adios", "hasta luego", "nos vemos", "eso es todo"]
+commands_for_screenshot = ["toma una captura de pantalla", "captura la pantalla"]
+
+commands_to_close = ["chao", "adiós", "hasta luego", "nos vemos", "eso es todo"]
+
+commands_for_spotify = {
+    "to open spotify": ["abre spotify", "abrir spotify"],
+    "to play a song": ["sigue con la canción", "vuelve a reproducir", "vuelve a poner la cancion"],
+    "to stop a song": ["pausa la canción", "para la canción"],
+    "to move to next song": ["pasa la canción", "siguiente canción"],
+    "to move to previous song": ["vuelve a la canción", "anterior canción", "canción de antes"]
+}
