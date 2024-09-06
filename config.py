@@ -13,7 +13,7 @@ def convert_speech_to_text():
     
     with sr.Microphone() as source:
     
-        recognizer.pause_threshold = 1
+        recognizer.pause_threshold = 0.5
         print("Escuchando...")
         
         audio = recognizer.listen(source)

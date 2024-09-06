@@ -53,6 +53,11 @@ petition = recognizer.recognize_google(audio, language='es-ES')
 ```
 and change `language='es-ES'` to your language code.
 
+## Don't forget to change also the Wikipedia language in `functions.py`:
+```
+wikipedia.set_lang('es')
+```
+
 ## To use the Spotify commands you'll need to create an `.env` file like this:
 ```
 CLIENT_ID = "##################"

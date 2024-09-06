@@ -27,8 +27,8 @@ commands_to_close = ["chao", "adiós", "hasta luego", "nos vemos", "eso es todo"
 
 commands_for_spotify = {
     "to open spotify": ["abre spotify", "abrir spotify"],
-    "to play a song": ["sigue con la canción", "vuelve a reproducir", "vuelve a poner la cancion"],
-    "to stop a song": ["pausa la canción", "para la canción"],
-    "to move to next song": ["pasa la canción", "siguiente canción"],
+    "to play a song": ["sigue con la canción", "vuelve a reproducir", "vuelve a poner la canción"],
+    "to stop a song": ["pausa la canción", "para la canción", "cállate"],
+    "to move to next song": ["pasa la canción", "siguiente canción", "pon otra canción"],
     "to move to previous song": ["vuelve a la canción", "anterior canción", "canción de antes"]
 }
