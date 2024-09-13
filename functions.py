@@ -67,8 +67,8 @@ def ask_for_wikipedia(command):
         if len(sugestions) > 0:
             command = sugestions[0]
             wiki = wikipedia.summary(command, 1)
-            speak(wiki)
             webbrowser.open(f"https://es.wikipedia.org/wiki/{command}")
+            speak(wiki)
         else:
             speak("No se ha podido encontrar la información, inténtalo de nuevo")
             

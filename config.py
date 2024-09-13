@@ -13,13 +13,16 @@ def convert_speech_to_text():
     
     with sr.Microphone() as source:
     
-        recognizer.pause_threshold = 0.5
-        print("Escuchando...")
+        print("Adjusting noise...")
+        recognizer.adjust_for_ambient_noise(source, duration=0.5)
         
-        audio = recognizer.listen(source)
         
         # Voice recognition
         try:
+            speak("Te escucho")
+            print("Escuchando...")
+            audio = recognizer.listen(source, phrase_time_limit=20)
+            
             print("Recognizing...")
             petition = recognizer.recognize_google(audio, language='es-ES')
             print(f"User: {petition}")
@@ -34,7 +37,10 @@ def convert_speech_to_text():
             print("Error en la conexión")
             speak("Error en la conexión")
             return "Vuélvelo a intentar"
-        
+        except sr.WaitTimeoutError:
+            print("Tiempo de espera agotado")
+            speak("Tiempo de espera agotado")
+            return "Vuélvelo a intentar"
         except:
             print("Error desconocido")
             speak("Error desconocido")
